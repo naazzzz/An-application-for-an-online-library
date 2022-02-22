@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="600.0" style="-fx-background-color: darkseagreen;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddBook">
+   <children>
+      <TextArea fx:id="nameid" blendMode="LIGHTEN" editable="false" layoutX="222.0" layoutY="33.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="76.0" prefWidth="156.0" style="-fx-background-color: white;" text="Libr.ru">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="name" layoutX="226.0" layoutY="151.0" />
+      <TextField fx:id="author" layoutX="226.0" layoutY="193.0" />
+      <TextField fx:id="publication" layoutX="226.0" layoutY="233.0">
+         <tooltip>
+            <Tooltip autoHide="true" text="Для корректного введения издания необходимо ввести через пробел имя издателя, дату и место издательства. Например: Эксмо 2021 Москва" />
+         </tooltip></TextField>
+      <TextField fx:id="representative" layoutX="226.0" layoutY="273.0">
+         <tooltip>
+            <Tooltip autoHide="true" text="Для корректного введения предоставителя необходимо ввести через пробел имя предоставителя и причину предоставления. Например: ФРБ Безвозмездно" />
+         </tooltip></TextField>
+      <TextField fx:id="purpose" layoutX="226.0" layoutY="313.0" />
+      <TextField fx:id="type_of_content" layoutX="226.0" layoutY="356.0" />
+      <TextArea blendMode="DARKEN" layoutX="88.0" layoutY="146.0" prefHeight="59.0" prefWidth="107.0" text="Название">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextArea>
+      <TextArea blendMode="DARKEN" layoutX="119.0" layoutY="189.0" prefHeight="59.0" prefWidth="107.0" text="Автор">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextArea>
+      <TextArea blendMode="DARKEN" layoutX="93.0" layoutY="229.0" prefHeight="59.0" prefWidth="129.0" text="Издание">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextArea>
+      <TextArea blendMode="DARKEN" layoutX="33.0" layoutY="271.0" prefHeight="76.0" prefWidth="186.0" text="Предоставитель">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextArea>
+      <TextArea blendMode="DARKEN" layoutX="73.0" layoutY="309.0" prefHeight="59.0" prefWidth="149.0" text="Назначение">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextArea>
+      <TextArea blendMode="DARKEN" layoutX="37.0" layoutY="349.0" prefHeight="59.0" prefWidth="179.0" text="Род Содержания">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="button_back" layoutX="87.0" layoutY="56.0" mnemonicParsing="false" text="&lt;- Назад">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_adding" layoutX="440.0" layoutY="256.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="116.0" text="Добавить книгу">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="id_admin_field" blendMode="DARKEN" layoutX="424.0" layoutY="59.0" />
+   </children>
+</AnchorPane>

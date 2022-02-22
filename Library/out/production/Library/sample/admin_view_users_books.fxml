@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: darkseagreen;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminViewUsersBooks">
+   <children>
+      <TextArea fx:id="nameid" blendMode="LIGHTEN" editable="false" layoutX="323.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="76.0" prefWidth="156.0" style="-fx-background-color: white;" text="Libr.ru">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </TextArea>
+      <TableView fx:id="table" editable="true" layoutX="88.0" layoutY="364.0" prefHeight="122.0" prefWidth="625.0">
+         <columns>
+            <TableColumn fx:id="nametable" prefWidth="78.0" text="Имя" />
+            <TableColumn fx:id="authortable" prefWidth="85.0" text="Автор" />
+            <TableColumn fx:id="pubtable" prefWidth="112.0" text="Публикация_id" />
+            <TableColumn fx:id="pred_table" prefWidth="123.0" text="Предоставитель_id" />
+            <TableColumn fx:id="naz_table" prefWidth="97.0" text="Назначение" />
+            <TableColumn fx:id="type_of_content_table" prefWidth="131.0" text="Тип контента" />
+         </columns>
+      </TableView>
+      <TableView fx:id="table1" editable="true" layoutX="88.0" layoutY="147.0" prefHeight="114.0" prefWidth="625.0">
+         <columns>
+            <TableColumn fx:id="idusers" prefWidth="78.0" text="idusers" />
+            <TableColumn fx:id="firstname" prefWidth="85.0" text="firstname" />
+            <TableColumn fx:id="lastname" prefWidth="112.0" text="lastname" />
+            <TableColumn fx:id="email" prefWidth="123.0" text="email" />
+            <TableColumn fx:id="password" prefWidth="97.0" text="password" />
+            <TableColumn fx:id="status" prefWidth="131.0" text="status" />
+         </columns>
+      </TableView>
+      <Text layoutX="88.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пользователь:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="88.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Его книги:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="choose_button" layoutX="364.0" layoutY="273.0" mnemonicParsing="false" text="Выбрать">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="id_admin_field" blendMode="DARKEN" layoutX="514.0" layoutY="52.0" prefHeight="25.0" prefWidth="94.0" />
+      <Button fx:id="back" layoutX="87.0" layoutY="52.0" mnemonicParsing="false" text="&lt;-  Назад">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

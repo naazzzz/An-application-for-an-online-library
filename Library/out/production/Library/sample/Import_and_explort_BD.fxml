@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: darkseagreen;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ImportAndExplortBD">
+   <children>
+      <TextArea fx:id="nameid" blendMode="LIGHTEN" editable="false" layoutX="222.0" layoutY="24.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="76.0" prefWidth="156.0" style="-fx-background-color: white;" text="Libr.ru">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="button_back" layoutX="87.0" layoutY="49.0" mnemonicParsing="false" text="&lt;- Назад">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="id_admin_field" blendMode="DARKEN" layoutX="431.0" layoutY="49.0" prefHeight="25.0" prefWidth="94.0" />
+      <Button fx:id="export" layoutX="271.0" layoutY="181.0" mnemonicParsing="false" text="Экспорт" />
+      <Button fx:id="imp" layoutX="271.0" layoutY="244.0" mnemonicParsing="false" text="Импорт" />
+   </children>
+</AnchorPane>
